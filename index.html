@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SLUview — Mini Yelp Replica</title>
+  <link rel="stylesheet" href="slu.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-badge">SLU</span><span class="brand-text">view</span>
+    </div>
+    <form class="searchbar" role="search" aria-label="search businesses" onsubmit="event.preventDefault()">
+      <input type="search" placeholder="Search ‘pizza’, ‘coffee’, ‘parks’…" aria-label="Search" />
+      <button type="submit" aria-label="Submit search">Search</button>
+    </form>
+  </header>
+
+  <main class="layout">
+    <!-- Column A -->
+    <aside class="col col-a" aria-labelledby="filters-heading">
+      <h2 id="filters-heading">Filters</h2>
+      <div class="filter-block">
+        <h3>Category</h3>
+        <label><input type="checkbox" /> Restaurants</label>
+        <label><input type="checkbox" /> Cafés</label>
+        <label><input type="checkbox" /> Parks</label>
+        <label><input type="checkbox" /> Museums</label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Price</h3>
+        <label><input type="radio" name="price" /> $</label>
+        <label><input type="radio" name="price" /> $$</label>
+        <label><input type="radio" name="price" /> $$$</label>
+        <label><input type="radio" name="price" /> $$$$</label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Rating</h3>
+        <label><input type="checkbox" /> 4★ & up</label>
+        <label><input type="checkbox" /> 3★ & up</label>
+        <label><input type="checkbox" /> 2★ & up</label>
+        <label><input type="checkbox" /> 1★ & up</label>
+      </div>
+
+      <nav class="quick-links" aria-label="quick links">
+        <a href="#featured">Featured</a>
+        <a href="#latest-reviews">Latest Reviews</a>
+      </nav>
+    </aside>
+
+    <!-- Column B -->
+    <section class="col col-b" id="featured" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Businesses</h2>
+
+      <article class="card biz">
+        <header>
+          <h3>Turmeric Indian Restaurant</h3>
+          <div class="meta">
+            <span class="chip">Restaurant</span>
+            <span class="chip">$$</span>
+            <span class="chip">4.6★</span>
+          </div>
+        </header>
+        <p class="location">St. Louis, MO</p>
+        <p class="blurb">North & South Indian classics, bold spices, and plenty of veggie options.</p>
+      </article>
+
+      <article class="card biz">
+        <header>
+          <h3>Kalid Coffee</h3>
+          <div class="meta">
+            <span class="chip">Café</span>
+            <span class="chip">$</span>
+            <span class="chip">4.7★</span>
+          </div>
+        </header>
+        <p class="location">St. Louis, MO</p>
+        <p class="blurb">Cozy specialty coffee bar with study-friendly seating and quick bites.</p>
+      </article>
+
+      <article class="card biz">
+        <header>
+          <h3>Pizza World</h3>
+          <div class="meta">
+            <span class="chip">Restaurant</span>
+            <span class="chip">$</span>
+            <span class="chip">4.3★</span>
+          </div>
+        </header>
+        <p class="location">St. Louis, MO</p>
+        <p class="blurb">Crispy crust pies, late-night slices, and fast service near campus.</p>
+      </article>
+    </section>
+
+    <!-- Column C -->
+    <section class="col col-c" id="latest-reviews" aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading">Latest Reviews</h2>
+      <div id="reviews-container" class="reviews-list" aria-live="polite"></div>
+      <noscript>
+        <p class="note">JavaScript is disabled — dynamic reviews require JS. Paste static review cards here as a fallback.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 SLUview • Educational project inspired by Yelp/TripAdvisor.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

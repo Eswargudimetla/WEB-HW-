@@ -1,0 +1,56 @@
+[
+  {
+    "businessName": "Turmeric Indian Restaurant",
+    "category": "Restaurant",
+    "location": "St. Louis, MO",
+    "price": "$$",
+    "rating": 5,
+    "date": "2025-03-15",
+    "text": "Butter chicken was rich and the garlic naan was perfectly charred. Friendly staff!"
+  },
+  {
+    "businessName": "Turmeric Indian Restaurant",
+    "category": "Restaurant",
+    "location": "St. Louis, MO",
+    "price": "$$",
+    "rating": 4,
+    "date": "2025-02-28",
+    "text": "Great spice level options. Paneer tikka was a hit; place gets busy at dinner."
+  },
+  {
+    "businessName": "Kalid Coffee",
+    "category": "Café",
+    "location": "St. Louis, MO",
+    "price": "$",
+    "rating": 5,
+    "date": "2025-03-08",
+    "text": "Loved the pour-over and the quiet corner tables. Perfect for a study session."
+  },
+  {
+    "businessName": "Kalid Coffee",
+    "category": "Café",
+    "location": "St. Louis, MO",
+    "price": "$",
+    "rating": 4,
+    "date": "2025-02-19",
+    "text": "Matcha latte was smooth and not too sweet. Limited seating at peak hours."
+  },
+  {
+    "businessName": "Pizza World",
+    "category": "Restaurant",
+    "location": "St. Louis, MO",
+    "price": "$",
+    "rating": 4,
+    "date": "2025-03-01",
+    "text": "Thin crust pepperoni was great value. Quick service before a late lecture."
+  },
+  {
+    "businessName": "Pizza World",
+    "category": "Restaurant",
+    "location": "St. Louis, MO",
+    "price": "$",
+    "rating": 3,
+    "date": "2025-02-10",
+    "text": "Good slice spot—wish there were more veggie toppings, but it’s fast and cheap."
+  }
+]
